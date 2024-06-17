@@ -30,14 +30,15 @@ input[type=text]{
 input[type=submit]{
   background-color: #009B75;
   color:#fff;
-  padding:0.6rem 0.8rem;
+  padding:0.3rem 0.8rem;
   border-radius:0.6rem;
+  font-size:1.1rem;
 }
 header form:before{
   content:'여행상담 02-1544-0402 | 긴급모객';
   color:#777;
   position:absolute;
-  font-size:.7rem;
+  font-size:.8rem;
   top:2.7rem;
   left:2rem;
 }
@@ -117,22 +118,23 @@ width 길이 740
   margin:2rem .7rem;
 }
 .subHead{
-  font-size:1.3rem;
+  font-size:1.4rem;
   font-weight:600;
 }
 .sec1>div>a{
-  font-size:0.8rem;
+  font-size:1rem;
   display:inline-block;
   background-color:#009B75;
-  padding:0.2rem 0.5rem;
+  padding:0.2rem 0.6rem;
   color:#fff;
   border-radius:2rem;
 }
 .sales{
   border: 1px solid #000;
   width:10rem;
-  height:13rem;
+  height:14rem;
   overflow:hidden;
+  position:relative;
 }
 .sec1 .box{
   width:inherit;
@@ -155,16 +157,15 @@ width 길이 740
   margin-bottom:2rem;
 }
 .sec1 .sales>span{
-  font-size:0.8rem;
+  font-size:0.9rem;
   display:block;
   padding: .2rem 0 .2rem .2rem;
   margin:0;
 }
 .sec1 .sales div:last-of-type{
   padding:0;
-  font-size:0.63rem;
-  position:relative;
-  height:3.5rem;
+  font-size:0.8rem;
+  height:3.8rem;
 }
 .sec1 .sales div:last-of-type span{
   display:block;
@@ -225,7 +226,7 @@ width 길이 740
   display:flex;
   justify-content: center;
   align-items: center;
-  font-size:0.8rem;
+  font-size:0.82rem;
   border:#009B75 solid .1rem;
   transition:0.4s;
 }
@@ -235,22 +236,20 @@ width 길이 740
   transition:0.4s;
 }
 .sec3 .items{
-  /* border: 1px solid red; */
   padding:0;
 }
 .sec3 .items p{
-  width:10rem;
+  width:11rem;
   height:12rem;
   margin-bottom:1rem;
   overflow: hidden;
-  /* border: 1px solid #000; */
 } 
 .sec3 .items p img{
   height:8rem;
   border-radius: 1.4rem;
-  width:10rem;
+  width:inherit;
 }
-.sec3 .items span{font-size:0.75rem;}
+.sec3 .items span{font-size:0.85rem;}
 .sec3 .items strong{
   margin-top:0.2rem;
   display:block;
@@ -277,11 +276,11 @@ footer ul{
   justify-content: space-around;
   align-items: center;
 }
-footer ul li{font-size: .7rem;}
+footer ul li{font-size: .8rem;}
 footer ul:last-of-type li:first-of-type{font-weight:600}
 
 footer p{padding-left:0.3rem; }
-footer p, footer>a{font-size:0.6rem}
+footer p, footer>a{font-size:0.8rem}
 footer>a{
   display:inline-block;
   margin:0.3rem 0.2rem;
@@ -291,8 +290,12 @@ footer>a{
   border-radius:1rem;
 }
 footer>div:last-of-type{margin-top:1rem;}
-footer>div:last-of-type img{
+footer>div:last-of-type p{
   width:360px;
-  height:1.4rem;
+  height: 2rem;
   display:block;
+} 
+footer>div:last-of-type img{
+  width:inherit;
+  height: inherit;
 } 
