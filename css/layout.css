@@ -1,0 +1,298 @@
+/* HEADER */
+header{position:relative;}
+header>div:first-of-type{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header figure:first-of-type{display:inline-block}
+header figure img{width:3rem;}
+header div figure:last-of-type{
+  width:7rem;
+  display:flex;
+  justify-content: space-around;
+}
+header div figure:last-of-type img{width:2rem;}
+header nav{position:absolute;}
+header form{
+  margin:2rem 0 3rem;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  position:relative;
+}
+input[type=text]{
+  padding:0.6rem 1rem;
+  width:15rem;
+  border: 0.16rem solid #009B75;
+  border-radius: 2rem;
+}
+input[type=submit]{
+  background-color: #009B75;
+  color:#fff;
+  padding:0.6rem 0.8rem;
+  border-radius:0.6rem;
+}
+header form:before{
+  content:'여행상담 02-1544-0402 | 긴급모객';
+  color:#777;
+  position:absolute;
+  font-size:.7rem;
+  top:2.7rem;
+  left:2rem;
+}
+/* menu ----------------------------------------------*/
+.menu{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-color:#009B75;
+  z-index:-1;
+}
+.menu img{
+  position:absolute;
+  top:1rem;
+  right:1rem;
+  width:1rem;
+}
+.menu .headMenu{
+  padding-top:1.3rem;
+  color:#fff;
+  margin:.3rem 0 0 .2rem;
+  font-size:1.4rem;
+  font-weight:500;
+}
+.menu .subMenu{
+  font-size:0.8rem;
+  display:flex;
+  justify-content:left;
+  flex-wrap:wrap;
+  padding-left:0.4rem;
+  }
+  .menu .subMenu span{
+    display:inline-block;
+    margin:0.3rem;
+    }
+.menu .subMenu{display:none;}
+.menu{opacity:0;}
+.active{
+  opacity:1;
+  z-index:1000;
+  transition: .4s ;
+}
+/* visualImg */
+.visualImg{
+  overflow:hidden;
+} 
+.container_v{
+  position:relative;
+  display:flex;
+  width:300vw;
+}
+.visualImg .inner{width:100vw;}
+.visualImg .inner img{width:100vw;}
+/* 
+width 길이 740
+총 길이:5180
+ */
+.thumbs{
+  position:absolute; 
+  bottom:0; 
+  left:50%;
+  transform:translateX(-50%);
+}
+.thumbs a{
+  display:inline-block;
+  width:0.4rem;
+  height:0.4rem;
+  border-radius: 50%;
+  background-color:#fff;
+}
+.thumbs .on{background-color:#555}
+/* section 1---------------------------- */
+.sec1>div{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:2rem .7rem;
+}
+.subHead{
+  font-size:1.3rem;
+  font-weight:600;
+}
+.sec1>div>a{
+  font-size:0.8rem;
+  display:inline-block;
+  background-color:#009B75;
+  padding:0.2rem 0.5rem;
+  color:#fff;
+  border-radius:2rem;
+}
+.sales{
+  border: 1px solid #000;
+  width:10rem;
+  height:13rem;
+  overflow:hidden;
+}
+.sec1 .box{
+  width:inherit;
+  height:8rem;
+  display:flex;
+  border: 1px solid #000;
+  border-color: #000 transparent;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  }
+.sec1 .box img{
+  width: 8rem;
+  display:block;
+}
+.sec1 figure{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom:2rem;
+}
+.sec1 .sales>span{
+  font-size:0.8rem;
+  display:block;
+  padding: .2rem 0 .2rem .2rem;
+  margin:0;
+}
+.sec1 .sales div:last-of-type{
+  padding:0;
+  font-size:0.63rem;
+  position:relative;
+  height:3.5rem;
+}
+.sec1 .sales div:last-of-type span{
+  display:block;
+  padding:0.2rem 0.2rem 0;
+}
+.sec1 .sales div:last-of-type span:last-of-type{
+  position:absolute;
+  bottom:0;
+  font-size:0.8rem;
+  color:rgb(218, 31, 31);
+  font-weight: 700;
+}
+/* section3----------------------------------- */
+.sec2 .subHead, .sec3 .subHead{margin-left:.8rem;}
+.sec2 figure{
+  overflow:hidden;
+  width:100%;
+}
+.sec2 figure .container_v{
+  width:300vw;
+  height:17rem;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  margin:2rem 0;
+  overflow:hidden;
+}
+.sec2 figure img{
+  margin-right:2rem;
+  width:50vw;
+  height:inherit;
+}
+
+.sec2 .container{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 1rem;
+  padding:1rem 0;
+  justify-items:center;
+  align-items: center;
+}
+.sec2 .container img{width:9rem;}
+/* Section3------------------------------------ */
+.sec3 figure{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sec3 figure ul{
+  width:6rem;
+  text-align: center;
+  margin:.3rem;
+}
+.sec3 figure ul li{
+  height:5rem;
+  margin-bottom:1rem;
+  border-radius:1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:0.8rem;
+  border:#009B75 solid .1rem;
+  transition:0.4s;
+}
+.clickedThis{
+  color:white;
+  background-color: #009B75;
+  transition:0.4s;
+}
+.sec3 .items{
+  /* border: 1px solid red; */
+  padding:0;
+}
+.sec3 .items p{
+  width:10rem;
+  height:12rem;
+  margin-bottom:1rem;
+  overflow: hidden;
+  /* border: 1px solid #000; */
+} 
+.sec3 .items p img{
+  height:8rem;
+  border-radius: 1.4rem;
+  width:10rem;
+}
+.sec3 .items span{font-size:0.75rem;}
+.sec3 .items strong{
+  margin-top:0.2rem;
+  display:block;
+  color:red;
+}
+.sec3 .items sub{color:#222;}
+.view{display:none;}
+/* footer -------------------------------------*/
+footer{margin-top:3rem;}
+footer>div:first-of-type{
+  padding:1.3rem 0.4rem;
+  border: .2rem solid #009B75;
+  border-color: #009B75 transparent;
+  
+}
+footer>div>span:last-child{
+  font-size: 1.2rem;
+  font-weight:600;
+  padding-left:.6rem
+}
+footer ul{
+  padding:0;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer ul li{font-size: .7rem;}
+footer ul:last-of-type li:first-of-type{font-weight:600}
+
+footer p{padding-left:0.3rem; }
+footer p, footer>a{font-size:0.6rem}
+footer>a{
+  display:inline-block;
+  margin:0.3rem 0.2rem;
+  padding:0.2rem 0.3rem;
+  color:#009B75;
+  border:0.1rem solid #009B75;
+  border-radius:1rem;
+}
+footer>div:last-of-type{margin-top:1rem;}
+footer>div:last-of-type img{
+  width:360px;
+  height:1.4rem;
+  display:block;
+} 
